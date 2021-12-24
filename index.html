@@ -96,52 +96,13 @@
                     <table class="table">
                         <thead class="thead-dark">
                             <tr>
-                                <th scope="col">S.no.</th>
                                 <th scope="col">OTT</th>
                                 <th scope="col">Show</th>
                                 <th scope="col">Action</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <!-- <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>
-                                    <a href="#editOTTModal" class="edit" data-toggle="modal">
-                                        <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
-                                    </a>
-                                    <a href="#deleteOTTModal" class="delete" data-toggle="modal">
-                                        <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>
-                                    <a href="#editOTTModal" class="edit" data-toggle="modal">
-                                        <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
-                                    </a>
-                                    <a href="#deleteOTTModal" class="delete" data-toggle="modal">
-                                        <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>
-                                    <a href="#editOTTModal" class="edit" data-toggle="modal">
-                                        <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
-                                    </a>
-                                    <a href="#deleteOTTModal" class="delete" data-toggle="modal">
-                                        <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
-                                    </a>
-                                </td>
-                            </tr> -->
+                            
                         </tbody>
                     </table>
                 </div>
@@ -171,8 +132,7 @@
         const listShowsRef = dbRef.child('list_shows');
         listShowsRef.on("child_added",snap =>{
            $("table tbody").append(
-               `<tr data-id=`+snap.key+`>
-                    <th scope="row">`+1+`</th>  
+               `<tr data-id=`+snap.key+`> 
                     <td>`+snap.val().OTT+`</td>
                     <td>`+snap.val().show+`</td>
                     <td>
