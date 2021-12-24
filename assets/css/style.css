@@ -18,7 +18,6 @@ section#hero{
 }
 section#hero .main_container{
     width:90%;
-    height:450px;
     background-color:white;
     display:flex;
     flex-direction: column;
